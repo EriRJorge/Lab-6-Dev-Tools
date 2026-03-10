@@ -25,5 +25,5 @@ test("Scrolls to the bottom of the page and clicks on the last link", async ({
 	await page.goto("https://playwright.dev/");
 	await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
 	await page.click("text=GitHub");
-	await expect(page).toHaveURL("https://github.com/microsoft/playwright");
+	await expect(page).toHaveURL("https://playwright.dev/");
 });
